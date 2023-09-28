@@ -52,6 +52,14 @@ body {
   margin-bottom: 5rem;
 }
 
+.img-div {
+  display: flex;
+  justify-content: center;
+}
+
+#main-img {
+}
+
 .btn-div {
   position: absolute;
   bottom: -3rem;
@@ -103,4 +111,12 @@ footer p a:hover {
 }
 footer p a:active {
   color: rgba(82, 255, 169, 0.7);
+}
+
+@media (max-width: 625px) {
+  .wrapper {
+    width: 90%;
+  }
+  .pattern-divider-img {
+  }
 }
