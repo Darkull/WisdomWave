@@ -1,16 +1,4 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
+/*
 - Light Cyan: hsl(193, 38%, 86%)
 - Neon Green: hsl(150, 100%, 66%)
 
@@ -19,17 +7,6 @@ The designs were created to the following widths:
 - Grayish Blue: hsl(217, 19%, 38%)
 - Dark Grayish Blue: hsl(217, 19%, 24%)
 - Dark Blue: hsl(218, 23%, 16%)
-
-## Typography
-
-### Body Copy
-
-- Font size (quote): 28px
-
-### Font
-
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 800
  */
 
 * {
@@ -40,4 +17,90 @@ The designs were created to the following widths:
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 60rem;
+  background-color: hsl(217, 19%, 24%);
+  padding: 5rem;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+}
+.advice-number {
+  color: hsl(150, 100%, 66%);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+.advice {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.btn-div {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn {
+  padding: 2rem 2rem;
+  border-radius: 100px;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+
+  box-shadow: 0 0 0 rgba(0, 123, 255, 0);
+}
+.btn-img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0 2rem rgba(82, 255, 169, 1);
+}
+
+.btn:active {
+  box-shadow: 0 0 2rem rgba(82, 255, 169, 0.5);
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 8rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+footer p a:hover {
+  color: rgba(82, 255, 169, 1);
+}
+footer p a:active {
+  color: rgba(82, 255, 169, 0.7);
 }
